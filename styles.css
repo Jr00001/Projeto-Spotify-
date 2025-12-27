@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color: black;
+    color:#fff ;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 300px;
+    background-color: #121212;
+    padding: 24px 24px 90px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-logo i {
+    font-size: 24px;
+}
+
+
+.nav-libary{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-libary i, .nav-libary p {
+   color: #b7b3b6;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.nav-playlist,
+.nav-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px; /* 👈 espaço entre eles */
+}
+
+
+.nav-playlist button,.nav-podcast button {
+      background-color: #fff;  
+      color: black;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 16px;
+      cursor: pointer;
+      font-size: 12px;
+      border-radius: 20px;
+   
+
+   }
+
+   .nav-playlist p,.nav-podcast p {
+       font-size: 12px;
+
+     }
+
+ .nav-footer {
+    margin-top: 24px; /* 👈 separa dos cards */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 11px;
+}
+
+
+.nav-footer a{
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.nav-footer a:hover{
+    text-decoration: underline;
+}
+
+
+     .nav-lang-button{
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 8px 12px;
+        margin-top: 24px;
+        cursor: pointer;
+        border-radius: 20px;
+       
+       
+        
+        
+     }
+
+     main{
+        padding: 24px;
+        flex-grow: 1;
+        overflow-y: auto;
+     }
+        
+     .search-bar{
+        display: flex;
+        align-items: center;
+        background-color: #242424;
+        padding: 8px 17px;
+        border-radius: 20px;
+        width: 300px;
+     }
+
+      .search-bar input{
+         background-color: transparent;
+         border: none;
+         color: #fff;
+         width: 100%;
+         margin-left: 8px;
+         outline: none;
+      }
+
+      .artists-grid,
+.albuns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* CARD ARTISTA */
+/* GRID */
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* CARD ARTISTA - SEM FUNDO / SEM BORDA */
+.artist-card {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGEM DO ARTISTA */
+/* CARD ARTISTA */
+.artist-card {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* IMAGEM REDONDA */
+.artist-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* 🔴 deixa redonda */
+    display: block;
+    margin: 0 auto 12px;
+}
+
+/* TEXTO */
+.artist-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.artist-card p {
+    font-size: 12px;
+    color: #a7a7a7;
+}
+
+
+
+/* CARD ÁLBUM */
+.album-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.album-card:hover {
+    background-color: #282828;
+}
+
+/* IMAGEM DO ÁLBUM */
+.album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px; /* 🟩 cantos arredondados */
+    margin-bottom: 12px;
+}
+
+/* TEXTO */
+.album-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.album-card p {
+    font-size: 12px;
+    color: #a7a7a7;
+}
+ .content{
+    margin-top: 40px;
+ }
+
+ .banner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    padding: 16px 24px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
